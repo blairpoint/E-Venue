@@ -1,0 +1,46 @@
+
+<?php
+$conn_string = "host=13.210.214.176 port=5432 dbname=test user=blairuser password=Fiddler56!";
+$conn = pg_connect($conn_string);
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+		<title>Evenue</title>
+		<!-- this is a comment -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+		<table id='banner'><img src="logo1.png" id='evenue' height='75'></table>
+		<ul id="menu">
+				<li><a href="events.php">Events</a>
+				<ul>
+					<li><a href="addevent.php">Add Event</a></li>
+
+				</ul>
+			</li>
+			<li><a href="venues.php">Venues</a>
+				<ul>
+					<li><a href="addvenue.php">Add Venue</a></li>
+
+				</ul>
+			</li>
+</ul>
+
+
+<br>
+<br>
+<table id='left'><tr>
+					<td>Add and Manage Venuesssssssssss and Events
+</td>
+</tr>
+
+</table>
+		<script type="text/javascript" src="fred.js" ></script>
+
+	</body>
+</html>

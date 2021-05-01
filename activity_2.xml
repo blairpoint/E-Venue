@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7A8AE"
+    tools:context=".Browser">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/bookmark"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="316dp"
+                android:layout_marginRight="316dp"
+                android:background="#A7A8AE"
+                app:layout_constraintBottom_toBottomOf="@+id/addressinput"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/addressinput"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@android:drawable/btn_star" />
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="407dp"
+                android:layout_height="623dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addressinput">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_x="-2dp"
+                    android:layout_y="-57dp"
+                    android:orientation="horizontal"></LinearLayout>
+            </WebView>
+
+            <LinearLayout
+                android:layout_width="407dp"
+                android:layout_height="54dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/webView">
+
+                <Button
+                    android:id="@+id/navback"
+                    android:layout_width="71dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="2dp"
+                    android:shadowColor="#A7A8AE"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="0"
+                    android:text="◄"
+                    android:textAllCaps="false"
+                    android:textColor="#D0F6FF"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    android:visibility="visible"
+                    app:backgroundTint="#00D8D2D2"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="15dp"
+                    app:iconTint="#00FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/webview"
+                    app:layout_constraintTop_toBottomOf="@+id/webview"
+                    app:layout_constraintVertical_bias="0.7"
+                    app:rippleColor="#FFFFFF"
+                    app:strokeColor="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/navforward"
+                    android:layout_width="71dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="2dp"
+                    android:shadowColor="#A7A8AE"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="0dp"
+                    android:text="►"
+                    android:textAllCaps="false"
+                    android:textColor="#D0F6FF"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    android:visibility="visible"
+                    app:backgroundTint="#00D8D2D2"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="0dp"
+                    app:iconTint="#00FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/navback"
+                    app:layout_constraintTop_toTopOf="@+id/go"
+                    app:rippleColor="#FFFFFF"
+                    app:strokeColor="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/go"
+                    android:layout_width="71dp"
+                    android:layout_height="67dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:lineSpacingExtra="8sp"
+                    android:padding="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="2dp"
+                    android:shadowColor="#A7A8AE"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="0"
+                    android:text="GO"
+                    android:textAllCaps="false"
+                    android:textColor="#D0F6FF"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    android:visibility="visible"
+                    app:backgroundTint="#00D8D2D2"
+                    app:cornerRadius="0dp"
+                    app:iconPadding="15dp"
+                    app:iconTint="#00FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/navback"
+                    app:layout_constraintEnd_toEndOf="@+id/webview"
+                    app:layout_constraintTop_toTopOf="@+id/navback"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:rippleColor="#FFFFFF"
+                    app:strokeColor="#00FFFFFF" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/addressinput"
+                android:layout_width="308dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="4dp"
+                android:background="#DCD9D9"
+                android:ems="10"
+                android:fadingEdge="horizontal|vertical"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:text="http://www.google.com"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.84"
+                app:layout_constraintStart_toStartOf="@+id/bookmark"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/urlclear"
+                android:layout_width="35dp"
+                android:layout_height="44dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/addressinput"
+                app:srcCompat="@android:drawable/ic_delete"
+                tools:layout_editor_absoluteY="4dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
